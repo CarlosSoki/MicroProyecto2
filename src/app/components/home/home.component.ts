@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from 'src/app/services/service.service';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+   
+  recipes:any;
 
-  constructor() { }
+  constructor(private service: ServiceService) {
+    this.recipes= this.service.obtenerReceta();
+    
+   }
 
   ngOnInit() {
   }
