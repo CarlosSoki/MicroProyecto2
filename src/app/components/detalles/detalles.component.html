@@ -1,8 +1,10 @@
 <div class="container">
+    <img class="img-responsive" src="{{recipe.image}}" width="300px">
       <h5>
         {{recipe.name}}
       </h5>
 </div>
+
 
 <div class="container">
   <div *ngFor="let item of recipe.ingredient">
