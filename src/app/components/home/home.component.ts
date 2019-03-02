@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
    
   recipes:any;
   public filtroProduct= '';
+  public filtroIngredient= '';
 
   constructor(private service: ServiceService) {
     this.recipes= this.service.obtenerReceta();

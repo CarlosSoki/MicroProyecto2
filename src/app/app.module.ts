@@ -9,7 +9,8 @@ import { ChefinfoComponent } from './components/chefinfo/chefinfo.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ServiceService } from 'src/app/services/service.service';
 import { FiltroPipe } from './pipes/filtro.pipe';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { FilterPipe } from './pipes/filter.pipe'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {FormsModule} from '@angular/forms'
     DetallesComponent,
     ChefinfoComponent,
     BannerComponent,
-    FiltroPipe
+    FiltroPipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
