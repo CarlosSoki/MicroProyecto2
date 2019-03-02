@@ -6,7 +6,7 @@ body{
     text-align:center;
 }
 .heading{
-    background: #fff;
+    background: #32dbc6;
     padding: 1%;
     text-align: left;
     box-shadow: 0px 0px 4px 0px #545b62;
@@ -16,8 +16,8 @@ body{
 }
 .bio-info{
     padding: 5%;
-    background:#fff;
-    box-shadow: 0px 0px 4px 0px #b0b3b7;
+    background: #ebefd0;
+    box-shadow: 0px 0px 4px 0px #000;
 }
 .name{
     font-family: 'Charmonman', cursive;
