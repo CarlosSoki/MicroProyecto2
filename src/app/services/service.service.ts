@@ -1595,6 +1595,10 @@ export class ServiceService {
   obtenerReceta(){
      return this.data;
    }
+
+   obtenerUna(i){
+     return this.data.recipes[i];
+   }
    
 
   
