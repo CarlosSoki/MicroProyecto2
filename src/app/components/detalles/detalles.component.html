@@ -1,7 +1,17 @@
-<p>
-  {{recipe.name}}
-</p>
-
-<div *ngFor="let item of recipe.ingredient">
-  {{item.name}}
+<div class="container">
+  <h5>
+     {{recipe.name}}
+  </h5>
 </div>
+
+<div class="container">
+  <div *ngFor="let item of recipe.ingredient">
+    <ul class="list-group">
+      <li class="list-group-item" style="background-color: #f8eeb4">{{item.name}}</li>
+    </ul>
+  </div>
+</div>
+
+
+
+  
