@@ -8,14 +8,14 @@
       <div class="card" style="background-color: #ebefd0">
         <div class="card-body text-center">
           <p>
-            <img class="img-fluid" src="{{item.image}}" alt="{{item.name}}" width="170px">
+            <img class="img-fluid" src="{{item.image}}" alt="{{item.name}}" width="180px">
           </p>
           <h4  class="card-title">{{item.name}}</h4>
           <p class="card-text text-center">
             {{item.description}}
           </p>
           <div>
-            <a [routerLink]="['/receta', i]" class="btn btn-block btn-primary">Ver Detalles</a>
+            <a [routerLink]="['/receta', i]" class="btn btn-lg btn-primary" style="background-color: #309286">Ver Detalles</a>
           </div>
         </div>
         
