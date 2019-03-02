@@ -9,6 +9,7 @@ import { ServiceService } from 'src/app/services/service.service';
 export class HomeComponent implements OnInit {
    
   recipes:any;
+  public filtroProduct= '';
 
   constructor(private service: ServiceService) {
     this.recipes= this.service.obtenerReceta();
