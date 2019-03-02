@@ -12,10 +12,11 @@
           <p class="card-text">
             {{item.description}}
           </p>
+          <div>
+            <a [routerLink]="['/receta', item.id]" class="btn btn-block btn-primary">Ver Detalles</a>
+          </div>
         </div>
-        <div>
-          <a [routerLink]="['/receta', item.id]" class="btn btn-block btn-primary">Ver Detalles</a>
-        </div>
+        
       </div>
     </div>
   </div>
