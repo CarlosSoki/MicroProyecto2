@@ -1,12 +1,12 @@
 <section id="books">
-  <!--  <div class="form-group">
+   <div class="form-group">
        <input type="text" class="form-control" placeholder="Buscar Nombre" name="filtroProduct" [(ngModel)]="filtroProduct">
-     </div>
-    -->
+  </div>
+    
 <div class="container">
   
 <div class="m-5">
-  <div class="col-xs-12 col-center mx-5" *ngFor= "let item of recipes.recipes, index as i">
+  <div class="col-xs-12 col-center mx-5" *ngFor= "let item of recipes.recipes| filtro:filtroProduct, index as i ">
     <br>
     <div class="card_book" >
       <div class="card" style="background-color: #ebefd0">
