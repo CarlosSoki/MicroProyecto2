@@ -1,13 +1,32 @@
 <div class="container">
-  <h5>
-     {{recipe.name}}
-  </h5>
+      <h5>
+        {{recipe.name}}
+      </h5>
 </div>
 
 <div class="container">
   <div *ngFor="let item of recipe.ingredient">
     <ul class="list-group">
-      <li class="list-group-item" style="background-color: #f8eeb4">{{item.name}}</li>
+      <li class="list-group-item" style="background-color: #f8eeb4">Nombre: {{item.name}} <br> Cantidad: {{item.amount}}<br> Unidad: {{item.unit}} <br> Preparacion: {{item.preparation}}</li> 
+      
+    </ul>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="container">
+  <h5>
+     Preparacion
+  </h5>
+</div>
+
+<div class="container">
+  <div *ngFor="let item of recipe.step">
+    <ul class="list-group">
+      <li class="list-group-item" style="background-color: #b4e9e2">{{item.description}} </li>
+      
     </ul>
   </div>
 </div>
